@@ -2,14 +2,14 @@ import React from 'react'
 function About() {
   return (
     <div style={{marginBottom: "4rem"}}>
-    <h2 style={{marginLeft: "8rem", color: "green"}}>About us</h2>
+    <h2 style={{marginLeft: "8rem", color: "blue"}}>About us</h2>
     <div style={{display: "flex"}}>
       
       <div>
         <p style={{letterSpacing: "2px", lineHeight: "25px", marginLeft: "2rem"}}>
-          lamar restuarant is located near the beach of miami. <br></br> It offers free Wi-Fi and parking. This small hotel has lush <br></br> garden and a 24-hour front desk.
-        <p>Individually decorated, the accommodations have a private <br></br>entrance and a terrace or balcony with garden views. They are <br></br> equipped with air conditioning, a small sitting area and a <br></br> private bathroom with shower. They also include a desk and a <br></br>safe.</p>
-         ReelWorld Hotel has a bar-restaurant and packed lunches <br></br>are available upon request. The hotel’s staff <br></br>can help arrange car rentals, airport shuttles and excursions.
+          lamar restuarant is located near the beach of miami.It offers free Wi-Fi and parking. This restuarant has lush garden and a 24-hour front desk.
+        <p>Individually decorated, the accommodations have a private entrance and a terrace or balcony with garden views.</p>
+         lamar has a bar-restaurant and packed lunches are available upon request. The hotel’s staff 
         </p>
       </div>
       <div>
@@ -22,4 +22,4 @@ function About() {
   )
 }
 
-export default About
+export default About;

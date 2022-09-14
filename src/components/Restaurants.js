@@ -1,28 +1,28 @@
 import React, { useState, useEffect } from 'react'
-function OurHotels() {
-  const [hotels, setHotels] = useState([]);
+function Restuarants() {
+  const [restuarant, setRestuarants] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:9292/restuarant")
     .then((response) => response.json())
     .then((data) =>{
-      setHotels(data)
+      setRestuarants(data)
       console.log(data)
     })
   },[]);
   return (
     <div className='cust-rev'>
-      <h3>Our Hotels</h3>
-      <ul className="hotels">
+      <h3>Restuarant</h3>
+      <ul className="restuarants">
        
       {
-            hotels.map((hotel) => ( 
-            <ol key = { hotel.id } >
+            Restuarants.map((Restuarants) => ( 
+            <ol key = { restuarant.id } >
               <div>
-                 { hotel.name }
+                 { restuarant.name }
                  </div>
                   <div>    
-                 {hotel.location}
+                 {restuarant.location}
                  </div>
   
                 </ol>
@@ -34,4 +34,4 @@ function OurHotels() {
   )
 }
 
-export default OurHotels;
+export default Restuarants;
